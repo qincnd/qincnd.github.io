@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>qincnd的电子木鱼</title>
+  </head>
+  
+  <style>
+    body{
+      
+      background-color:black;
+      display:flex;
+      justify-content:center;
+      height:80vh;
+      align-items:center;
+      }
+    
+    img{
+      
+      width:200px;
+      transition: all 0.5s;
+      }
+  
+   
+    p{
+      color:white;
+      opacity:0;
+      position:absolute;
+      top:30vh;
+      left:20vw;
+      
+      }
+    
+    
+  </style>
+  
+  <body>	
+	  <p>功德+1</p>
+      <img src="lib/muyu.png"/>
+ 
+ 
+ <script>
+ let muyu = document.querySelector("img")
+ let gongde = document.querySelector("p")
+ document.addEventListener("click",function(){
+     
+     muyu.style.transform ="scale(1.1)"
+     gongde.style.transform = "translateY(-20px)"
+     gongde.style.transition = "all 0.5s"
+     gongde.style.opacity = 1
+     setTimeout(()=>{
+          muyu.style.transform ="scale(1)"
+          gongde.style.transition = "none"
+          gongde.style.transform = "translateY(0px)"
+          gongde.style.opacity = 0
+       
+       },500)
+     
+     })
+ 
+ 
+ 
+ </script>
+   
+  </body>
+</html>
