@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 <html>
-  <head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>qincnd的电子木鱼</title>
-  </head>
-  
+ <head> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>qincnd的电子木鱼</title> 
+  <script src="js/jq.js"></script> 
   <style>
     body{
       
@@ -32,14 +30,12 @@
       }
     
     
-  </style>
-  
-  <body>	
-	  <p>功德+1</p>
-      <img src="lib/muyu.png"/>
- 
- 
- <script>
+  </style> 
+ </head> 
+ <body id="v1"> 
+  <p id="v2" style="transform: translateY(-20px); transition: all 0.5s ease 0s; opacity: 1;">功德+1</p> 
+  <img id="v3" src="lib/muyu.png" style="transform: scale(1);"> 
+  <script>
  let muyu = document.querySelector("img")
  let gongde = document.querySelector("p")
  document.addEventListener("click",function(){
@@ -60,7 +56,6 @@
  
  
  
- </script>
-   
-  </body>
+ </script>  
+ </body>
 </html>
