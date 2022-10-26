@@ -1,0 +1,130 @@
+<html lang="zh_CN">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <title>root刷机教程</title> 
+  <!-- Bootstrap Core CSS --> 
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- Additional fonts for this theme --> 
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"> 
+  <!-- Custom styles for this theme --> 
+  <link href="css/clean-blog.min.css" rel="stylesheet"> 
+  <!-- Temporary navbar container fix until Bootstrap 4 is patched --> 
+  <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style> 
+ </head> )
+  <hr id="v79" color="orange">
+ <body id="v1"> 
+  <!-- Navigation --> 
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"> 
+   <div id="v2" class="container"> 
+    <button id="v3" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 更多 <i id="v4" class="fa fa-bars"></i> </button> 
+    <h1 id="v5">root？</h1> 
+    <div class="collapse navbar-collapse" id="navbarResponsive"> 
+     <ul id="v6" class="navbar-nav ml-auto"> 
+      <li id="v7" class="nav-item"> <a id="v8" class="nav-link page-scroll" href="index.html">主页</a> </li> 
+      <li id="v9" class="nav-item"> <a id="v10" class="nav-link page-scroll" href="about.html">关于</a> </li> 
+      <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="blog.html">博客/blog</a> </li> 
+      <li id="v13" class="nav-item"> <a id="v14" class="nav-link page-scroll" href="qita.html">其它</a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </nav> 
+  <!-- Page Header --> 
+  <header id="v15" class="intro-header" style="background-image: url('img/superroot.png')"> 
+   <div id="v16" class="container"> 
+    <div id="v17" class="row"> 
+     <div id="v18" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <div id="v19" class="post-heading"> 
+       <h1 id="v20" style="color:rgb(36,147,110)">root!</h1> 
+       <h2 id="v21" class="subheading" style="color:rgb(36,147,110)">magisk？</h2> 
+       <span id="v22" class="meta" style="color:rgb(36,147,110)">Posted by <a id="v23" href="#" style="color:rgb(36,147,110)">于</a> 2022年10月26</span> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </header> 
+  <!-- Post Content --> 
+  <article id="v24"> 
+   <div id="v25" class="container"> 
+    <div id="v26" class="row"> 
+     <div id="v27" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <hr id="v80" color="pink">
+      <h6 id="v86" style="color:rgb(245,150,170)">烟花，要从哪里看呢🎆</h6>
+      <h6 id="v81" style="color:rgb(244,167,185)">打上花火-米津玄师</h6>
+      <h6 id="v82" style="color:rgb(219,77,109)">bilibili:AV715690818</h6>
+      <audio src="lib/mp3/yanhua.mp3" width="100%" controls="" id="v78"> 
+      </audio> 
+      <hr id="v85" color="pink">
+      <h2 id="v28">为什么要root刷机？</h2> 
+      <p id="v29">脱离厂商的控制，成为手机真正的主人</p> 
+      <h2 id="v30">root手机有什么好处？</h2> 
+      <p id="v31">修改系统，拿到最高权限</p> 
+      <h2 id="v32">最高权限是什么</h2> 
+      <p id="v33">Android是一个基于Linux的操作系统，root权限相当于Windows中的管理员权限，root单词翻译成中文就是根的意思，root权限挂载于Android boot内核，Android手机的权限大致分为以下</p>
+      <blockquote id="v36" class="blockquote">
+        root>system>adb>user>user app
+      </blockquote> 
+      <p id="v34">上面说了，Android是基于Linux，root是挂载Linux boot内核中，所以root是最高级别的权限，system，翻译就是系统的意思，也就是系统应用所有的权限，adb，就是Android调试桥的缩写，adb可以直接调用shell，shell是Android系统中可以直接使用系统权限执行脚本/命令的权限，如shizuku/冰箱等，使用adb激活应用后就拥有了system API的权限，这就可以在这个基础上直接调用shell来执行命令。user就是用户，指用户所拥有的权限，比如触控等。user app，就是你安装的应用所拥有的权限，它们仅有用最基础的权限</p>
+      <h2 id="v35" style="color:rgb(36,147,110)">那么，怎么对手机进行root呢？</h2>
+      <p id="v36">1,解锁手机的bootloader,bl锁,bl锁,就是在你手机的boot内核文件上加了一道锁,你不能随意更改,那么怎样解bl锁？</p>
+      <a id="v37" href="https://www.miui.com/unlock/">小米解锁官网</a>
+      <p id="v38">注：像OPPO/vivo/华为等均不支持解bl</p>
+      <p id="v39">首先，打开开发者选项，找到OEM解锁，把它打开</p>
+      <p id="v40">然后重启你的手机到fastboot模式，电源键与音量键同时按住，知道屏幕出现了fastboot的，字样</p>
+      <p id="v41">或者执行这个命令来重启到fastboot模式</p>
+      <p id="v43">注：需要在开发者选项开启adb调试</p>
+      <blockquote id="v42" class="blockquote">
+        adb reboot fastboot
+      </blockquote>
+      <blockquote id="v42" class="blockquote">
+        adb reboot bootloader 
+      </blockquote>
+      <p id="v44">随后使用命令,来解锁bootloader</p>
+      <blockquote id="v45" class="blockquote">
+        fastboot flashing unlock
+      </blockquote>
+      <p id="v46">至此，你就完成了第一步</p>
+     </div> 
+    </div> 
+   </div> 
+  </article> 
+  <hr id="v48"> 
+  <!-- Footer --> 
+  <footer id="v49"> 
+   <div id="v50" class="container"> 
+    <div id="v51" class="row"> 
+     <div id="v52" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <ul id="v53" class="list-inline text-center"> 
+       <li id="v54" class="list-inline-item"> <a id="v55" href="wechat.html"> <span id="v56" class="fa-stack fa-lg"> <i id="v57" class="fa fa-circle fa-stack-2x"></i> <i id="v58" class="fa fa-wechat fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v59" class="list-inline-item"> <a id="v60" href="qq.html"> <span id="v61" class="fa-stack fa-lg"> <i id="v62" class="fa fa-circle fa-stack-2x"></i> <i id="v63" class="fa fa-QQ fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v64" class="list-inline-item"> <a id="v65" href="https://github.com/qincnd"> <span id="v66" class="fa-stack fa-lg"> <i id="v67" class="fa fa-circle fa-stack-2x"></i> <i id="v68" class="fa fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+      </ul> 
+      <p id="v69" class="copyright text-muted">qincnd @2022</p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <!-- jQuery Version 3.1.1 --> 
+  <script src="lib/jquery/jquery.js"></script> 
+  <!-- Tether --> 
+  <script src="lib/tether/tether.min.js"></script> 
+  <!-- Bootstrap Core JavaScript --> 
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+  <!-- Theme JavaScript --> 
+  <script src="js/jq.js"></script>  
+ </body>
+</html>
