@@ -1,88 +1,98 @@
-<html>
- <head> 
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
-  <title>更多</title> 
+<html lang="zh_CN"><head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <title>其它</title> 
+  <!-- Bootstrap Core CSS --> 
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- Additional fonts for this theme --> 
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"> 
+  <!-- Custom styles for this theme --> 
+  <link href="css/clean-blog.min.css" rel="stylesheet"> 
+  <!-- Temporary navbar container fix until Bootstrap 4 is patched --> 
   <style>
-			*{
-     			margin:5px 27px 0px 27px;
-     		}
-			h2{
-     			color:#00a4ec;
-     			text-align:center
-     		}
-     		body{
-         		background-image:url("lib/back.jpg");
-				background-size:100%
-         	}
-			div{
-     			text-align:center
-     		}
-			a{
-				text-decoration:none;
-				color:#008768
-			}
-		</style> 
-  <script>
-			 function sweet(){
-        		webtools-static-lert("喵喵喵~");
-        	}
-       		 function time(){//随时间变化标题
-				let times=new Date().getHours();
-    			if(times<=5 || times>=23){
-					time_tast.innerHTML="这么晚了，你还没睡觉吗？(つω-)";
-				}else{
-					time_tast.innerHTML="欢迎来到qincnd的网站！";
-				}
-    		}
-			function time2(){//随时间变化图片
-				let times2=new Date().getHours();
-       			if(times2>=12 && times2<=17){
-					document.getElementById("abc").src="lib/3.png";
-				}else if(times2>=18 || times2<=5){
-					document.getElementById("abc").src="lib/5.png";
-				}else{
-					document.getElementById("abc").src="lib/6.png";
-				}
-       		}
-			window.onload=time;
-   			window.onload=time2;
-		</script> 
-  <script src="js/jq.js"></script> 
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style> 
  </head> 
  <body id="v1"> 
-  <div id="v2"> 
-   <img style="height:600px" id="abc" src="lib/6.png"> 
+  <!-- Navigation --> 
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"> 
+   <div id="v2" class="container"> 
+    <button id="v3" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 更多 <i id="v4" class="fa fa-bars"></i> </button> 
+    <h2 id="v5" class="navbar-brand page-scroll">其它</h2> 
+    <div class="collapse navbar-collapse" id="navbarResponsive"> 
+     <ul id="v6" class="navbar-nav ml-auto"> 
+      <li id="v7" class="nav-item"> <a id="v8" class="nav-link page-scroll" href="index.html">主页</a> </li> 
+      <li id="v9" class="nav-item"> <a id="v10" class="nav-link page-scroll" href="about.html">关于</a> </li> 
+      <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="blog.html">博客/blog</a> </li> 
+       <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="end.html">其它</a> </li>
+     </ul> 
+    </div> 
+   </div> 
+  </nav> 
+  <!-- Page Header --> 
+  <header id="v14" class="intro-header" style="background-image: url('lib/8.jpg')"> 
+   <div id="v16" class="container"> 
+    <div id="v17" class="row"> 
+     <div id="v18" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <div id="v19" class="site-heading"> 
+       <h1 id="v20">其它</h1> 
+       <span id="v21" class="subheading">其它</span> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </header> 
+  <!-- Main Content --> 
+  <div id="v22" class="container"> 
+   <div id="v23" class="row"> 
+    <div id="v24" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+     <div id="v25" class="post-preview"> 
+      <a id="v26" href="HelloWorld.html"> <h2 id="v27" class="post-title"> 在这里放了一些小游戏</h2> <h3 id="v28" class="post-subtitle"> 如果域名在 「qincnd.github.io 」内，就是经过我修改过的，反之就没有</h3> </a> 
+      <p id="v29" class="post-meta">Posted by <a id="v30" href="#">于</a> 2022/10/24</p> 
+     </div> 
+     <hr id="v53"> 
+     <!-- Pager --> 
+     <div id="v54" class="clearfix"> 
+      <a id="v55" class="btn btn-secondary float-right" href="#">Older Posts →</a> 
+     </div> 
+    </div> 
+   </div> 
   </div> 
-  <h1 style="background-color:444444;color:FFFFFF;text-align:center" id="time_tast">欢迎来到qincnd的网站</h1> 
-  <p id="v3" style="text-align:center"><em id="v4">114514</em></p> 
-  <hr id="v5"> 
-  <h2 id="v6">·介绍·</h2> 
-  <p id="v7">这只是一个很简单的网页</p> 
-  <p id="v8">如果要源代码的话可以去我的GitHub找</p> 
-  <p id="v9"><em id="v10">https://github.com/qincnd</em></p> 
-  <hr id="v11"> 
-  <h2 id="v12">·域名·</h2> 
-  <ul id="v13"> 
-   <li id="v14">唯一域名:<a id="v15" href="https://qincnd.github.io/">https://qincnd.github.io/</a></li> 
-  </ul> 
-  <hr id="v16"> 
-  <h2 id="v17">·目录·</h2> 
-  <ul id="v18"> 
-   <li id="v19"><a id="v20" href="aboutme.html">about qincnd</a></li> 
-   <li id="v21"><a id="v22" href="game.html" onclick="sweet();">这里放了一些小游戏</a></li> 
-   <li id="v23"><a id="v24" href="https://molyuu.github.io">这里放个大佬的博客</a></li> 
-   <li id="v25"><a id="v26" href="blog.html">个人博客</a></li> 
-   <li id="v27"><a id="v28" href="qita.html">杂项</a></li> 
-  </ul> 
-  <hr id="v29"> 
-  <em id="v30">喵~</em> 
-  <p id="v31" style="color:ffffff">烫知识:绿色可以点(-ω-)</p> 识:绿色可以点(-ω-) 
-  <p id="v32"></p> ω-) 
-  <p id="v33"></p> ω-) 
-  <p id="v34"></p> ω-) 
-  <p id="v35"></p> ω-) 
-  <p id="v36"></p> ω-) 
-  <p id="v37"></p> -) 
-  <p></p>  
- </body>
+  <hr id="v56"> 
+  <!-- Footer --> 
+  <footer id="v57"> 
+   <div id="v58" class="container"> 
+    <div id="v59" class="row"> 
+     <div id="v60" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <ul id="v61" class="list-inline text-center"> 
+       <li id="v62" class="list-inline-item"> <a id="v63" href="wechat.html"> <span id="v64" class="fa-stack fa-lg"> <i id="v65" class="fa fa-circle fa-stack-2x"></i> <i id="v66" class="fa fa-wechat fa-stack-1x fa-inverse"> </i> </span> </a> </li> 
+       <li id="v67" class="list-inline-item"> <a id="v68" href="QQgroup.html"> <span id="v69" class="fa-stack fa-lg"> <i id="v70" class="fa fa-circle fa-stack-2x"></i> <i id="v71" class="fa fa-QQ fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v72" class="list-inline-item"> <a id="v73" href="https://github.com/qincnd"> <span id="v74" class="fa-stack fa-lg"> <i id="v75" class="fa fa-circle fa-stack-2x"></i> <i id="v76" class="fa fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+      </ul> 
+      <p id="v77" class="copyright text-muted">qincnd @2022 Mobile </p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <!-- jQuery Version 3.1.1 --> 
+  <script src="lib/jquery/jquery.js"></script> 
+  <!-- Tether --> 
+  <script src="lib/tether/tether.min.js"></script> 
+  <!-- Bootstrap Core JavaScript --> 
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+  <!-- Theme JavaScript --> 
+  <script src="js/jq.js"></script>  
+  </body>
 </html>
