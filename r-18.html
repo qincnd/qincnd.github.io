@@ -1,0 +1,127 @@
+<html lang="zh_CN">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <title>never</title> 
+  <!-- Bootstrap Core CSS --> 
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- Additional fonts for this theme --> 
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"> 
+  <!-- Custom styles for this theme --> 
+  <link href="css/clean-blog.min.css" rel="stylesheet"> 
+  <!-- Temporary navbar container fix until Bootstrap 4 is patched --> 
+  <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style> 
+    <body>
+    <!-- 网页鼠标点击特效（爱心） -->
+    <script type="text/javascript">
+         ! function (e, t, a) {
+            function r() {
+                for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
+                        e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x +
+                    "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e]
+                    .scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+                requestAnimationFrame(r)
+            }
+ 
+            function n() {
+                var t = "function" == typeof e.onclick && e.onclick;
+                e.onclick = function (e) {
+                    t && t(), o(e)
+                }
+            }
+ 
+            function o(e) {
+                var a = t.createElement("div");
+                a.className = "heart", s.push({
+                    el: a,
+                    x: e.clientX - 5,
+                    y: e.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: c()
+                }), t.body.appendChild(a)
+            }
+ 
+            function i(e) {
+                var a = t.createElement("style");
+                a.type = "text/css";
+                try {
+                    a.appendChild(t.createTextNode(e))
+                } catch (t) {
+                    a.styleSheet.cssText = e
+                }
+                t.getElementsByTagName("head")[0].appendChild(a)
+            }
+ 
+            function c() {
+                return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math
+                    .random()) + ")"
+            }
+            var s = [];
+            e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e
+                .mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+                    setTimeout(e, 1e3 / 60)
+                }, i(
+                    ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
+                ), n(), r()
+        }(window, document);
+    </script>
+</body>
+ </head> 
+ <body id="v1"> 
+  <!-- Navigation --> 
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"> 
+   <div id="v2" class="container"> 
+    <button id="v3" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 更多 <i id="v4" class="fa fa-bars"></i> </button> 
+    <h1 id="v5" class="navbar-brand page-scroll">gonna</h1> 
+    <div class="navbar-collapse collapse" id="navbarResponsive" aria-expanded="false" style=""> 
+     <ul id="v6" class="navbar-nav ml-auto"> 
+      <li id="v7" class="nav-item"> <a id="v8" class="nav-link page-scroll" href="index.html">主页</a> </li> 
+      <li id="v9" class="nav-item"> <a id="v10" class="nav-link page-scroll" href="about.html">关于</a> </li> 
+      <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="blog.html">博客/blog</a> </li> 
+      <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="qita.html">其它</a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </nav> 
+  <iframe id="v71" src="https://player.bilibili.com/player.html?aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&page=1" width="100%" height="250px" frameborder="1/0" name="0" scrolling="yes/no/auto"> </iframe> 
+  <hr id="v40"> 
+  <!-- Footer --> 
+  <footer id="v41"> 
+   <div id="v42" class="container"> 
+    <div id="v43" class="row"> 
+     <div id="v44" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <ul id="v45" class="list-inline text-center"> 
+       <li id="v46" class="list-inline-item"> <a id="v47" href="wechat.html"> <span id="v48" class="fa-stack fa-lg"> <i id="v49" class="fa fa-circle fa-stack-2x"></i> <i id="v50" class="fa fa-wechat fa-stack-1x fa-inverse"> </i> </span> </a> </li> 
+       <li id="v51" class="list-inline-item"> <a id="v52" href="qq.html"> <span id="v53" class="fa-stack fa-lg"> <i id="v54" class="fa fa-circle fa-stack-2x"></i> <i id="v55" class="fa fa-QQ fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v56" class="list-inline-item"> <a id="v57" href="https://github.com/qincnd"> <span id="v58" class="fa-stack fa-lg"> <i id="v59" class="fa fa-circle fa-stack-2x"></i> <i id="v60" class="fa fa-GitHub fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+      </ul> 
+      <p id="v61" class="copyright text-muted">qincnd @2022</p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <!-- jQuery Version 3.1.1 --> 
+  <script src="lib/jquery/jquery.js"></script> 
+  <!-- Tether --> 
+  <script src="lib/tether/tether.min.js"></script> 
+  <!-- Bootstrap Core JavaScript --> 
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+  <!-- Theme JavaScript --> 
+  <script src="js/jq.js"></script>  
+ </body>
+</html>
