@@ -31,9 +31,11 @@
     
     
   </style> 
-  <body>
-    <!-- 网页鼠标点击特效（爱心） -->
-    <script type="text/javascript">
+  <style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style>
+ </head> 
+ <body id="v1"> 
+  <!-- 网页鼠标点击特效（爱心） --> 
+  <script type="text/javascript">
          ! function (e, t, a) {
             function r() {
                 for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
@@ -85,10 +87,7 @@
                     ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
                 ), n(), r()
         }(window, document);
-    </script>
-</body>
- </head> 
- <body id="v1"> 
+    </script> 
   <p id="v2" style="transform: translateY(0px); transition: none 0s ease 0s; opacity: 0;">功德+1</p> 
   <img id="v3" src="lib/muyu.png" style="transform: scale(1);"> 
   <script>
