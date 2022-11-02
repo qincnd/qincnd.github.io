@@ -1,9 +1,10 @@
-<html lang="zh_CN"><head> 
+<html lang="zh_CN">
+ <head> 
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content=""> 
   <meta name="author" content=""> 
-  <title>QQ</title> 
+  <title>xposed</title> 
   <!-- Bootstrap Core CSS --> 
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
   <!-- Additional fonts for this theme --> 
@@ -24,9 +25,11 @@
         }
     }
     </style> 
-    <body>
-    <!-- 网页鼠标点击特效（爱心） -->
-    <script type="text/javascript">
+  <style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style>
+ </head> 
+ <body id="v1"> 
+  <!-- 网页鼠标点击特效（爱心） --> 
+  <script type="text/javascript">
          ! function (e, t, a) {
             function r() {
                 for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
@@ -78,62 +81,47 @@
                     ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
                 ), n(), r()
         }(window, document);
-    </script>
-</body>
- </head> 
- <body id="v1"> 
+    </script> 
   <!-- Navigation --> 
   <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"> 
    <div id="v2" class="container"> 
     <button id="v3" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 更多 <i id="v4" class="fa fa-bars"></i> </button> 
-    <h2 id="v5" class="navbar-brand page-scroll">qincnd的QQ</h2> 
+    <h1 id="v5">xposed</h1> 
     <div class="collapse navbar-collapse" id="navbarResponsive"> 
      <ul id="v6" class="navbar-nav ml-auto"> 
       <li id="v7" class="nav-item"> <a id="v8" class="nav-link page-scroll" href="index.html">主页</a> </li> 
       <li id="v9" class="nav-item"> <a id="v10" class="nav-link page-scroll" href="about.html">关于</a> </li> 
       <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="blog.html">博客/blog</a> </li> 
-       <li id="v11" class="nav-item"> <a id="v12" class="nav-link page-scroll" href="qita.html">其它</a> </li>
+      <li id="v13" class="nav-item"> <a id="v14" class="nav-link page-scroll" href="qita.html">其它</a> </li> 
      </ul> 
     </div> 
    </div> 
   </nav> 
-  <!-- Page Header --> 
-  <header id="v14" class="intro-header" style="background-image: url('lib/8.jpg')"> 
-   <div id="v16" class="container"> 
-    <div id="v17" class="row"> 
-     <div id="v18" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
-      <div id="v19" class="site-heading"> 
-       <h1 id="v20">qincnd QQ</h1> 
-       <span id="v21" class="subheading">qincnd的QQ</span> 
-      </div> 
+  <hr> 
+  <!--内容--> 
+
+  <article id="v24"> 
+   <div id="v25" class="container"> 
+    <div id="v26" class="row"> 
+     <div id="v27" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+     <p id="v81">test</p>
+     <a id="v80" href="xposed/xposed.zip" download>test</a>
      </div> 
     </div> 
    </div> 
-  </header> 
-  <!-- Main Content --> 
-  <div id="v22" class="container"> 
-   <div id="v23" class="row"> 
-    <div id="v24" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
-     <div id="v25" class="post-preview"> 
-      <a id="v26" href="https://qm.qq.com/cgi-bin/qm/qr?k=tLYpGEuMCiywFVNWhpt3l8HwABMDkwgQ&noverify=0&personal_qrcode_source=4"> <h2 id="v27" class="post-title">个人QQ</h2> <h3 id="v28" class="post-subtitle"> 2162848316</h3> </a> 
-      <p id="v29" class="post-meta">Posted by <a id="v30" href="#">日期</a>2022/10/24</p> 
-      <img src="img/qq.png" width="100%" height="570px"></img>
-     </div> 
-    </div> 
-   </div> 
-  </div> 
-  <hr id="v56"> 
+  </article> 
+  <hr id="v48"> 
   <!-- Footer --> 
-  <footer id="v57"> 
-   <div id="v58" class="container"> 
-    <div id="v59" class="row"> 
-     <div id="v60" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
-      <ul id="v61" class="list-inline text-center"> 
-       <li id="v62" class="list-inline-item"> <a id="v63" href="wechat.html"> <span id="v64" class="fa-stack fa-lg"> <i id="v65" class="fa fa-circle fa-stack-2x"></i> <i id="v66" class="fa fa-wechat fa-stack-1x fa-inverse"> </i> </span> </a> </li> 
-       <li id="v67" class="list-inline-item"> <a id="v68" href="QQgroup.html"> <span id="v69" class="fa-stack fa-lg"> <i id="v70" class="fa fa-circle fa-stack-2x"></i> <i id="v71" class="fa fa-QQ fa-stack-1x fa-inverse"></i> </span> </a> </li> 
-       <li id="v72" class="list-inline-item"> <a id="v73" href="github.html"> <span id="v74" class="fa-stack fa-lg"> <i id="v75" class="fa fa-circle fa-stack-2x"></i> <i id="v76" class="fa fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+  <footer id="v49"> 
+   <div id="v50" class="container"> 
+    <div id="v51" class="row"> 
+     <div id="v52" class="col-lg-8 offset-lg-2 col-md-10 offset-md-1"> 
+      <ul id="v53" class="list-inline text-center"> 
+       <li id="v54" class="list-inline-item"> <a id="v55" href="wechat.html"> <span id="v56" class="fa-stack fa-lg"> <i id="v57" class="fa fa-circle fa-stack-2x"></i> <i id="v58" class="fa fa-wechat fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v59" class="list-inline-item"> <a id="v60" href="qq.html"> <span id="v61" class="fa-stack fa-lg"> <i id="v62" class="fa fa-circle fa-stack-2x"></i> <i id="v63" class="fa fa-QQ fa-stack-1x fa-inverse"></i> </span> </a> </li> 
+       <li id="v64" class="list-inline-item"> <a id="v65" href="github.html"> <span id="v66" class="fa-stack fa-lg"> <i id="v67" class="fa fa-circle fa-stack-2x"></i> <i id="v68" class="fa fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li> 
       </ul> 
-      <p id="v77" class="copyright text-muted">qincnd @2022 Mobile </p> 
+      <p id="v69" class="copyright text-muted">qincnd @2022</p> 
      </div> 
     </div> 
    </div> 
@@ -146,5 +134,5 @@
   <script src="lib/bootstrap/js/bootstrap.min.js"></script> 
   <!-- Theme JavaScript --> 
   <script src="js/jq.js"></script>  
-  </body>
+ </body>
 </html>

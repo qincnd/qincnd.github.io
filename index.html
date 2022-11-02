@@ -1,212 +1,219 @@
-<html>
- <head> 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-  <title>qincndの个人网页</title> 
-  <style type="text/css">
-			/* CSS Document */
-			* {
-				margin: 0;
-				padding: 0;
-			}
+<html lang="zh_CN">
+<head><meta charset="utf-8">
+		
+  
+  
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="instap">
+		<link rel="icon" href="#">
+		<title>qincnd</title>
+		<link href="css/m.1fa67fb2.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/chunk-b601d230.77c44edd.css">
+		    <style type="text/css">
+        .text1 {
+            font-size: 45px;
+            font-weight: normal;
+            text-transform: uppercase;
+            /*大写 lowercase小写；capitalize单词首字母大写*/
+            fill: none;
+            stroke: #B0E0E6;
+            stroke-width: 2px;
+            stroke-dasharray: 90 310;
+            animation: stroke 6s infinite linear;
+        }
 
-			a {
-				text-decoration: none;
-			}
+        .text-1 {
+            stroke: #FFEC8B;
+            animation-delay: -1.5s;
+            text-shadow: 5px 5px 5px #FFEC8B;
+        }
 
-			.clearfix:after {
-				content: "";
-				display: block;
-				height: 0;
-				visibility: hidden;
-				clear: both;
-			}
+        .text-2 {
+            stroke: #AEEEEE;
+            animation-delay: -3s;
+            text-shadow: 5px 5px 5px #7FFFD4;
+        }
 
-			.clearfix {
-				*zoom: 1;
-			}
+        .text-3 {
+            stroke: #EEE0E5;
+            animation-delay: -4.5s;
+            text-shadow: 5px 5px 5px #7FFFD4;
+        }
 
-			body {
-				background: url(lib/2.jpg);
-				background-size: cover;
-			}
+        .text-4 {
+            stroke: #FFC1C1;
+            animation-delay: -6s;
+            text-shadow: 5px 5px 5px #7FFFD4;
+        }
 
-			.content {
-				width: 900px;
-				height: 500px;
-				margin: 200px auto 0 auto;
-				border-radius: 10px;
-				background-color: rgba(236, 236, 236, 0.59);
-				transition: all 1.0s;
-				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
-			}
-
-			.content img {
-				float: left;
-				width: 200px;
-				height: 200px;
-				margin: 150px 0 0 80px;
-				border-radius: 100px;
-
-			}
-
-			.content:hover {
-				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
-			}
-
-			.content_r {
-				float: right;
-				width: 500px;
-				margin: 80px 60px 0 0;
-				/*	background-color: pink;*/
-			}
-
-			.content_l {
-				float: left;
-				width: 100%;
-				text-align: center;
-			}
-
-			.content_l h5 {
-
-				font-size: 17px;
-			}
-
-			.cc {
-				margin-top: 10px;
-				color: #1F2023;
-				font-size: 18px;
-			}
-
-			.color_1 {
-				color: #4855EC;
-				font-size: 18px;
-			}
-
-			.deeppink {
-				color: deeppink;
-			}
-
-			.link {
-				margin-top: 30px;
-			}
-
-			.link a {
-				display: block;
-				float: left;
-				width: 120px;
-				height: 45px;
-				margin: 5px 5px 0 0;
-				/*	padding: 0 15px;*/
-				color: #fff;
-				line-height: 45px;
-				transition: all 0.8s;
-				/*	background-color: deeppink;*/
-
-			}
-
-			.link a:hover {
-				background-color: rgba(0, 201, 243, 0.35);
-			}
-
-			.deeppink_1 {
-				background-color: deeppink;
-			}
-
-			.dodgerblue {
-				background-color: dodgerblue;
-			}
-
-			.magenta {
-				background-color: magenta;
-			}
-
-			.orange {
-				background-color: orange;
-			}
-		</style> 
-  <body>
-    <!-- 网页鼠标点击特效（爱心） -->
-    <script src="js/yh.js">
-    </script>
-    <script type="text/javascript">
-         ! function (e, t, a) {
-            function r() {
-                for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
-                        e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x +
-                    "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e]
-                    .scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
-                requestAnimationFrame(r)
+        @keyframes stroke {
+            to {
+                stroke-dashoffset: -400;
             }
- 
-            function n() {
-                var t = "function" == typeof e.onclick && e.onclick;
-                e.onclick = function (e) {
-                    t && t(), o(e)
-                }
-            }
- 
-            function o(e) {
-                var a = t.createElement("div");
-                a.className = "heart", s.push({
-                    el: a,
-                    x: e.clientX - 5,
-                    y: e.clientY - 5,
-                    scale: 1,
-                    alpha: 1,
-                    color: c()
-                }), t.body.appendChild(a)
-            }
- 
-            function i(e) {
-                var a = t.createElement("style");
-                a.type = "text/css";
-                try {
-                    a.appendChild(t.createTextNode(e))
-                } catch (t) {
-                    a.styleSheet.cssText = e
-                }
-                t.getElementsByTagName("head")[0].appendChild(a)
-            }
- 
-            function c() {
-                return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math
-                    .random()) + ")"
-            }
-            var s = [];
-            e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e
-                .mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
-                    setTimeout(e, 1e3 / 60)
-                }, i(
-                    ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
-                ), n(), r()
-        }(window, document);
-    </script>
-</body>
-  <script src="js/jq.js"></script> 
-  <script src="js/tc.js"></script>
- </head> 
- <body id="v1"> 
-  <div id="v2" class="content"> 
-   <img id="v3" src="lib/3.png" alt=""> 
-   <div id="v4" class="content_r clearfix"> 
-    <div id="v5" class="content_l clearfix"> 
-     <h2 id="v6">Hi~ 我是qincnd， Welcome here ！</h2> 
-     <p id="v7" class="cc">I'm a Chinese</p> 
-     <p id="v8" class="cc">是个傻逼</p> 
-     <br id="v9"> 
-     <p id="v10" class="color_1">I'm qincnd,a sb</p> 
-     <p id="v11" class="color_1"></p> 
-     <br id="v12"> 
-     <p id="v13" class="deeppink"> こんにちは </p> 
-     <p id="v14" class="deeppink">私はqincnd</p> 
-     <div id="v15" class="link"> 
-      <a id="v16" href="github.html" class="dodgerblue" target="_blank">GitHub</a> 
-      <a id="v17" href="QQgroup" class="white" target="_blank">QQ群</a> 
-      <a id="v18" href="blog.html" class="magenta" target="_blank">博客blog</a> 
-      <a id="v19" href="end.html" class="orange" target="_blank">更多</a> 
-     </div> 
-    </div> 
-   </div> 
-  </div>  
- </body>
-</html>
+        }
+    </style>
+</head>
+
+<body _c_t_j1="1" style="">
+    <div id="app">
+        <div data-v-1f9b29e2="" class="page-wrap">
+            <div data-v-1f9b29e2="" class="main-page" style="padding-top: 54px;">
+                <div data-v-1f9b29e2="" class="nav">
+                </div>
+                <div data-v-1f9b29e2="" class="new-header">
+                    <div data-v-1f9b29e2="" class="user-profile">
+                        <div data-v-1f9b29e2="" class="photo-wrap">
+                            <!---->
+
+                            <div data-v-1f9b29e2="" class="mood">
+                                <div data-v-1f9b29e2="" class="mood-content">
+                                    <svg width="100%" height="80" style="margin:-30px auto">
+                                        <text text-anchor="middle" x="50%" y="50%" class="text1 text-1">
+                                            qincnd
+                                        </text>
+                                        <text text-anchor="middle" x="50%" y="50%" class="text1 text-2">
+                                            qincnd
+                                        </text>
+                                        <text text-anchor="middle" x="50%" y="50%" class="text1 text-3">
+                                            qincnd
+                                        </text>
+                                        <text text-anchor="middle" x="50%" y="50%" class="text1 text-4">
+                                            qincnd
+                                        </text>
+                                    </svg>
+                                   
+                                </div>
+                            </div>
+                            <div data-v-1f9b29e2="" class="photo">
+                                <img data-v-1f9b29e2="" src="img/u1.png" alt="">
+                            </div>
+                        </div>
+                        <div data-v-1f9b29e2="" class="name">
+                            <span data-v-1f9b29e2="" class="gender-icon man"></span> qincnd
+                            <span data-v-1f9b29e2="" class="constellation-icon" style="margin: 0px 0px 6px 10px;"></span>
+                        </div>
+                        <p data-v-1f9b29e2="" class="desc">我是ikun</p>
+                    </div>
+					</div>
+					<div data-v-1f9b29e2="" class="body">
+						<div data-v-1f9b29e2="" class="tab-list">
+						</div>
+      
+						<div data-v-1f9b29e2="" class="app-list">
+      
+							<a data-v-1f9b29e2="" href="wechat.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/1.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">微信</p>
+								</div>
+							</a>
+							<a data-v-1f9b29e2="" href="qq.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/6.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">QQ</p>
+								</div>
+							</a>
+       						<a data-v-1f9b29e2="" href="QQgroup.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/u4.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">QQ群</p>
+								</div>
+							</a>
+       						<a data-v-1f9b29e2="" href="github.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/GitHub.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">github</p>
+								</div>
+							</a>
+              				<a data-v-1f9b29e2="" href="blog.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/u3.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">blog/博客</p>
+								</div>
+							</a>
+                            <a data-v-1f9b29e2="" href="about.html" class="item" style="opacity: 1;">
+								<div data-v-1f9b29e2="" class="content-wrap">
+									<div data-v-1f9b29e2="" class="img-wrap">
+										<img data-v-1f9b29e2="" src="img/u2.png" alt="">
+									</div>
+									<p data-v-1f9b29e2="" class="app-name">关于</p>
+								</div>
+							</a>
+							<!---->
+						</div>
+					</div>
+				</div>
+ 						<!-- 音乐播放器跨站开始 -->
+		<link rel="stylesheet" href="css/player.css">
+       <div id="QPlayer">  
+          <div id="pContent">
+	         <div id="player">
+	         	<span class="cover"></span>
+	             	<div class="ctrl">
+			<div class="musicTag marquee">
+				<strong>Title</strong>
+				 <span> - </span>
+				<span class="artist">Artist</span>
+			</div>
+			<div class="progress">
+				<div class="timer left">0:00</div>
+				<div class="contr">
+					<div class="rewind icon"></div>
+					<div class="playback icon"></div>
+					<div class="fastforward icon"></div>
+				</div>
+				<div class="right">
+					<div class="liebiao icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <div class="ssBtn">
+	   <div class="adf"></div>
+    </div>
+</div>
+    <ol id="playlist"></ol>
+</div>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.marquee.min.js"></script>
+<script>
+var	playlist = [
+{title: "my歌单",artist: "随机音乐",mp3:"https://api.uomg.com/api/rand.music?mid=7722302516&format=mp3",cover: "img/u5.png"}];
+
+	    var isRotate = true;<!--图片旋转-->
+	    var autoplay = true;<!--自动播放-->
+</script>
+    <script src="js/player.js"></script>
+  <script>
+     function bgChange(){
+     	var lis= $('.lib');
+    	for(var i=0; i<lis.length; i+=2)
+    	lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+        }
+        window.onload = bgChange;
+   </script>
+<!-- 音乐播放器跨站结束 -->
+
+				<div data-v-1cb8f412="" data-v-1f9b29e2="" class="wrap">
+					<a data-v-1cb8f412="" href="https://beian.miit.gov.cn">qincnd @2022</a>
+				</div>
+			</div>
+		</div>
+  
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/Mouse.js"></script><!-- 点击烟花特效 -->
+	
+
