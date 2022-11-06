@@ -228,7 +228,7 @@
 		var mA = $("#QPlayer");
 		if ($('.ssBtn .adf').hasClass('on') === false) {
 			if (isFirstPlay) {
-			    setTimeout("showTips('#player .cover','点击封面开启(关闭)随机播放', " + function(){setTimeout("showTips('#player .ctrl .musicTag','点击拖动标题栏快进(快退)')", 1000)} + ");", 500);
+			    setTimeout("showTips('#player .cover','点击封面', " + function(){setTimeout("showTips('#player .ctrl .musicTag','点击拖动标题栏快进(快退)')", 1000)} + ");", 500);
 			    isFirstPlay = !isFirstPlay;
 			    localStorage.qplayer = 'false';
 			}
@@ -243,8 +243,8 @@
 	$("#player .cover").on('click',function(){
 		isShuffle = !isShuffle;
 		if (isShuffle) {
-	        $("#player .cover").attr("title","点击关闭随机播放");
-	        showNotification('已开启随机播放');
+	        $("#player .cover").attr("title","君指先跃动の光は、私の一生不变の信仰に、唯私の超电永世生き");
+	        showNotification('君指先跃动の光は、私の一生不变の信仰に、唯私の超电永世生き');
 
 			var temp = [];
 			for (var i = 0; i < playlist.length; i++) {
@@ -259,8 +259,8 @@
 			}
 			localStorage.qplayer_shuffle_array = JSON.stringify(shuffleArray);
 		} else {
-	        $("#player .cover").attr("title","点击开启随机播放");
-	        showNotification('已关闭随机播放');
+	        $("#player .cover").attr("title","君指先跃动の光は、私の一生不变の信仰に、唯私の超电永世生き");
+	        showNotification('君指先跃动の光は、私の一生不变の信仰に、唯私の超电永世生き');
 	        localStorage.removeItem('qplayer_shuffle_array');
 		}
 		localStorage.qplayer = isShuffle;
