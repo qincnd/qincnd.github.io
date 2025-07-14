@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+body img{
+    width: 60%;
+    height: auto;
+    border-radius: 1%;
+}
+
+.paper {
+    text-align: left;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    font-size: 20px;
+}
