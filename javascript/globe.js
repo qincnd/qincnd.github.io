@@ -8,10 +8,9 @@ function randomRgbaColor(a) {
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
     return `rgba(${r},${g},${b},${a})`;
-}
-topBar.addEventListener('mouseenter', function () {
+}function message(txtContent) {
     const tip = document.createElement('div');
-    tip.textContent = 'Ciallo～(∠・ω< )⌒★';
+    tip.textContent = txtContent;
     tip.style.position = 'fixed';
     tip.style.top = '90px';
     tip.style.left = '50%';
@@ -40,9 +39,15 @@ topBar.addEventListener('mouseenter', function () {
         document.body.removeChild(tip);
         document.head.removeChild(style);
     }, 3000);
-});
+}
+topBar.addEventListener('mouseenter', () => message('Ciallo～(∠・ω< )⌒★'));
 
+var avatarClick = 0;
 avatar.addEventListener('click', function () {
+    avatarClick += 1 ;
+    if (avatarClick == 10) {
+        message("BV1GJ411x7h7");
+    }
     this.style.transform = 'scale(0.9)';
     this.style.boxShadow = '0 0 0 5px rgba(255 , 183 , 197, 0.5)';
     this.style.boxShadow = '0 0 0 5px ' + randomRgbaColor(0.5);
@@ -73,7 +78,7 @@ avatar.addEventListener('click', function () {
     setTimeout(() => {
         this.style.transform = 'scale(1.1)';
         this.style.boxShadow = '0 0 15px rgba(255 , 183 , 197, 0.3)';
-        this.style.boxShadow = '0 0 15px ' +  randomRgbaColor(0.3);
+        this.style.boxShadow = '0 0 15px ' + randomRgbaColor(0.3);
     }, 300);
 });
 window.addEventListener('scroll', function () {
@@ -83,6 +88,28 @@ window.addEventListener('scroll', function () {
         topBar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
     }
 });
-var GoldSentence = ["与你的日常，便是奇迹。","有阳光的地方，人自然会聚集。","给岁月以文明，而不是给文明以岁月","描线一笔接一笔，白色的素描本上渐渐萌生黑意。即便如此，还无法照准记忆中的风景。","梦里相逢人不见，若知是梦何须醒。纵然梦里常幽会，怎比真如见一回。","以彗星为龙，以彗星为绳结。描绘出割裂的彗星舞动的形态。又是一轮岁月。","重要的不是经历，是选择。","机器可以替代，但人是不可替代的。"]
+
+var GoldSentence = ["Ciallo～(∠・ω< )⌒★", "与你的日常，便是奇迹。", "有阳光的地方，人自然会聚集。", "给岁月以文明，而不是给文明以岁月", "描线一笔接一笔，白色的素描本上渐渐萌生黑意。即便如此，还无法照准记忆中的风景。", "梦里相逢人不见，若知是梦何须醒。纵然梦里常幽会，怎比真如见一回。", "以彗星为龙，以彗星为绳结。描绘出割裂的彗星舞动的形态。又是一轮岁月。", "重要的不是经历，是选择。", "机器可以替代，但人是不可替代的。"]
 var randomNum = Math.floor(Math.random() * GoldSentence.length);
 subtitle.textContent = GoldSentence[randomNum];
+
+var time = document.getElementById('time');
+
+function runtime() {
+    X = new Date("07/15/2025 14:23:00");
+    Y = new Date();
+    T = (Y.getTime() - X.getTime());
+    M = 24 * 60 * 60 * 1000;
+    a = T / M;
+    A = Math.floor(a);
+    b = (a - A) * 24;
+    B = Math.floor(b);
+    c = (b - B) * 60;
+    C = Math.floor((b - B) * 60);
+    D = Math.floor((c - C) * 60);
+    time.innerHTML = "Run<br> " + A + " D " + B + " H " + C + " M " + D + " S "
+}
+runtime();
+setInterval(function () {
+    runtime();
+}, 1000)
