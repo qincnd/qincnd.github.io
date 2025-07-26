@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+body img{
+    width: 60%;
+    height: auto;
+    border-radius: 1%;
+}
+
+.paper {
+    text-align: left;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    font-size: 20px;
+}
+
+body a {
+    color: white;
+}
