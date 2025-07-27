@@ -1,7 +1,5 @@
 body {
     text-align: center;
-    word-wrap: break-word;
-    word-break: break-all;
 }
 
 body img{
@@ -16,8 +14,23 @@ body img{
     height: auto;
     display: inline-block;
     font-size: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 body a {
     color: white;
+}
+
+.hrtext {
+    content: attr(data-content);
+    position: absolute;
+    padding: 0 1ch;
+    line-height: 1px;
+    border: solid #d0d0d5;
+    border-width: 0 99vw;
+    width: fit-content;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
 }

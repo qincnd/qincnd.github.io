@@ -257,3 +257,7 @@ body {
     font-size: 15px;
     color: #ffffff2d;
 }
+
+.end a {
+    color: rgba(255, 255, 255, 0.2);
+}

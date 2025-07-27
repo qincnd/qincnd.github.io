@@ -109,7 +109,7 @@ function runtime() {
     c = (b - B) * 60;
     C = Math.floor((b - B) * 60);
     D = Math.floor((c - C) * 60);
-    time.innerHTML = "Run<br> " + A + " D " + B + " H " + C + " M " + D + " S "
+    time.innerHTML = "<br> " + A + " D " + B + " H " + C + " M " + D + " S "
 }
 runtime();
 setInterval(function () {
