@@ -219,7 +219,7 @@ body {
     height: 1px;
     background: linear-gradient(to right,
             transparent,
-            rgba(255, 255, 255, 0.8),
+            rgb(255, 255, 255),
             transparent
         );
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);

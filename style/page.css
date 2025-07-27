@@ -44,10 +44,10 @@ body a {
 .hrtext {
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
-.hrtext::before,
+/* .hrtext::before,
 .hrtext::after {
     content: '';
     flex: 1;
@@ -57,13 +57,34 @@ body a {
             rgba(255, 255, 255, 0.8),
             transparent);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+} */
+.hrtext::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            rgb(255, 255, 255));
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.hrtext::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right,
+            rgb(255, 255, 255),
+            rgba(255, 255, 255, 0.6),
+            transparent);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .hrtext span {
     padding: 0 15px;
     color: #fff;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 15px;
     border-radius: 20px;
     position: relative;
     z-index: 2;
