@@ -16,30 +16,13 @@ body img {
     font-size: 20px;
     word-wrap: break-word;
     word-break: break-all;
+    
+    
 }
 
 body a {
     color: white;
 }
-
-/* 
-.hrtext {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.hrtext::before,
-.hrtext::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #d0d0d5;
-}
-
-.hrtext span {
-    padding: 0 10px;
-    color: #333;
-} */
 
 .hrtext {
     display: flex;
@@ -47,17 +30,6 @@ body a {
     margin: 10px 0;
 }
 
-/* .hrtext::before,
-.hrtext::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(to right,
-            transparent,
-            rgba(255, 255, 255, 0.8),
-            transparent);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-} */
 .hrtext::before {
     content: '';
     flex: 1;

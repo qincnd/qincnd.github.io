@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>404 NOT FOUND</title>
+    <link rel="icon" href="image/headshot.jpg" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="code/prism.css">
+<link rel="stylesheet" href="style/globe.css">
+<link rel="stylesheet" href="style/page.css">
+
+<style>
+.button{
+    display: block;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: rgba(30, 158, 137, 0.281) 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+</style>
+
+<body>
+    <header class="top-bar" id="topBar">
+        <div class="avatar" id="avatar">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="title-container">
+            <div class="page-title">404 NOT FOUND</div>
+            <div class="subtitle" id="subtitle"></div>
+        </div>
+        <div class="right-space"></div>
+    </header>
+    <br><br><br>
+        <div class="paper" style="text-align: center;">你来到了一片蛮荒之地，这里什么都没有，也许是你点错了链接或者我删除了什么，点击<a href="./index.html">此处</a>返回主页 
+        欸，什么？你没点错，那我就不知道了，可能你单纯点错了，或者你就是想看看404页面？
+    <br>
+    什么？你就是想来找茬？这代码两块钱一斤，你爱要不要吧
+    <br>
+    既然如此，给你一点奖励，此奖励非彼奖励
+    <br>
+    <button class="button">Show me</button>
+    <br>
+<iframe style="display: none;" id="bilibili" src="https://player.bilibili.com/player.html?isOutside=true&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1"
+    width="80%" height="500px" frameborder="0" scrolling="no" allowfullscreen="true">
+</iframe>
+<div  class="image" id="image"></div>
+</div>
+    <hr class="end-hr">
+    <div class="end">power by <a href="index.html">qincnd</a>
+        <span id="time"></span>
+    </div>
+</body>
+<script src="code/prism.js"></script>
+<script src="javascript/globe.js"></script>
+<script>
+    // 翻源代码做什么，是不是想作弊
+    var btn = 0;
+    function randomHexColor() {
+        var hex = Math.floor(Math.random() * 16777216).toString(16);
+        while (hex.length < 6) {
+            hex = '0' + hex;
+        }
+        return '#' + hex;
+    }
+    document.querySelector('.button').addEventListener('click', function () {
+        btn++;
+        if (btn == 1) {
+            this.innerHTML = "我说的奖励是这个吗？";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 2) {
+            this.innerHTML = "你还想要什么？";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 3) {
+            this.innerHTML = "你已经点过了，别点了！";
+            this.style.color = randomHexColor();
+        } else if (btn == 4) {
+            this.innerHTML = "那你继续点吧";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 10) {
+            this.innerHTML = "点够1000次有色图";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 20) {
+            this.innerHTML = "继续坚持吧！20了哦";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 50) {
+            this.innerHTML = "算了，100下吧，仁慈点";
+            this.style.backgroundColor = randomHexColor();  
+            this.style.color = randomHexColor();
+        } else if (btn == 100) {
+            this.innerHTML = "你还真信啊" ;
+             message("NEVER GONNA GIVE YOU UP");    
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+            document.getElementById("bilibili").style.display = "block";
+        } else if (btn == 180) {
+            this.innerHTML = "你点了180下，奖励是这个";
+            message("提前告诉你，我准备的图，是r18的哦，这是第180下，给有耐心的人的奖励");
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+        } else if (btn == 1000) {
+            this.innerHTML = "我靠，够坚持";
+            message("这是给你的色图");
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+            document.getElementById("image").innerHTML = '<img src="image/404/浅羽诞_68895599.jpg" alt="68895599"> <br> <img src="image/404/チノEX2 テイクアウトえっち_93265982_p1.jpg" alt="チノEX2 テイクアウトえっち_93265982"> <br> <img src="image/404/ホシノ_102239496_p1.jpg" alt="ホシノ_102239496"> <br> <img src="image/404/ユニコーンと要人護衛_96502899_p2.jpg" alt="ユニコーンと要人護衛_96502899"> <br> <img src="image/404/イラストリクエスト_87250629_p1.jpg" alt="イラストリクエスト_87250629"> <br> 欢迎投稿（bushi';
+        } else {
+            this.innerHTML = "这是点的第" + btn + "次";
+            this.style.backgroundColor = randomHexColor();
+            this.style.color = randomHexColor();
+            console.log("你点了" + btn + "次");
+            document.getElementById("bilibili").style.display = "none";
+        }
+    });
+</script>
+</html>
